@@ -8,7 +8,7 @@ This Github repository contains Sample Jupyter Notebook.
 - **A/B testing Notes:**
 > * [A/B testing](https://github.com/Erik1120/Sample/blob/main/A_B_Testing_Datacamp.ipynb)
 
-
+- **EDA/Wrangling:**
 > * [Data EDA/Wrangling](https://github.com/Erik1120/Springboard/blob/main/Capstone/Notebook/SentimentAnalysis_wrangling.ipynb)
 
 
