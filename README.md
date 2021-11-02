@@ -1,23 +1,14 @@
-# Data Science Capstone
-### Tweeter Sentiment Analysis
+# Data Science 
+### GitHub Repository
 
-This exercise is the tweet sentiment dataset which contains 1.6 million tweets extracted using the Twitter API. The tweets are labeled with (0 = negative, 4 = positive). 
-
-
-### 1. Data
-
-**Content**
-It contains the following 6 fields:
-1. **target:** the polarity of the tweet (0 = negative, 2 = neutral, 4 = positive)
-2. **ids:** The id of the tweet 
-3. **date:** the date of the tweet
-4. **flag:** The query. If there is no query, then this value is NO_QUERY.
-5. **user:** the user that tweeted
-6. **text:** the text of the tweet
-
-In this exercise, the data ONLY contains a positive and negative sentiment, a classic balanced binary classification exercise.
-
+This Github repository contains Sample Jupyter Notebook.
+- **Data Source**
 > * [Kaggle](https://www.kaggle.com/kazanova/sentiment140)
+
+- **A/B testing Notes:**
+> * [A/B testing](https://github.com/Erik1120/Sample/blob/main/A_B_Testing_Datacamp.ipynb)
+
+
 > * [Data EDA/Wrangling](https://github.com/Erik1120/Springboard/blob/main/Capstone/Notebook/SentimentAnalysis_wrangling.ipynb)
 
 
