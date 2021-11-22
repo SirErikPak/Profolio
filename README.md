@@ -5,7 +5,7 @@ This Github repository contains Sample Jupyter Notebook.
 - **Data Source**
 > * [Kaggle](https://www.kaggle.com/kazanova/sentiment140)
 
-1. > * [Sentiment analysis with tweets]
+1. > * [Sentiment analysis with tweets](https://github.com/Erik1120/Profolio/blob/main/BayesianOptimization.ipynb)
     - Lancaster Stemmer
     - Count Vectorizer & Tfidf Vectorizer
     - Light GBM Classifier with Bayesian Optimization
