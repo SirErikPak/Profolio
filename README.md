@@ -10,11 +10,12 @@ This Github repository contains Sample Jupyter Notebook.
     - Count Vectorizer & Tfidf Vectorizer
     - Light GBM Classifier with Bayesian Optimization
 
+2. 
 - **A/B testing Notes:**
 > * [A/B testing](https://github.com/Erik1120/Sample/blob/main/A_B_Testing_Datacamp.ipynb)
 
-- **EDA/Wrangling:**
-> * [Data EDA/Wrangling](https://github.com/Erik1120/Springboard/blob/main/Capstone/Notebook/SentimentAnalysis_wrangling.ipynb)
+- **Pandas Data Manipulation:**
+> * [Pandas Data Manipulation](https://github.com/Erik1120/Profolio/blob/main/Pandas/DataManipulationPandas.ipynb)
 
 
 ### 2. Data Cleaning
@@ -24,6 +25,10 @@ This Github repository contains Sample Jupyter Notebook.
 1. Applied Regular expression operations to remove noise from the tweets. Also, Lancaster Stemmer was used to determining the common root form and from nltk.corpus to generate stopwords removal for our sentiment analysis data.
 
 2. All the features except target and text were remove from our analysis.
+
+
+
+
 
 > * Word Frequency below:
 ![](https://github.com/Erik1120/Springboard/blob/main/Capstone/Notebook/image/words_freq.png)
