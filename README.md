@@ -14,8 +14,15 @@ This Github repository contains Sample Jupyter Notebook.
 - **A/B testing Notes:**
 > * [A/B testing](https://github.com/Erik1120/Sample/blob/main/A_B_Testing_Datacamp.ipynb)
 
-- **Pandas Data Manipulation:**
+- **Pandas:**
 > * [Pandas Data Manipulation](https://github.com/Erik1120/Profolio/blob/main/Pandas/DataManipulationPandas.ipynb)
+
+> * [Pandas Joining Data 1](https://github.com/Erik1120/Profolio/blob/main/Pandas/JoiningDataWithPandas.ipynb)
+
+> * [Pandas Joining Data 2](https://github.com/Erik1120/Profolio/blob/main/Pandas/PandasJoinsForSpreadsheetUsers.ipynb)
+
+> * [Reshaping data](https://github.com/Erik1120/Profolio/blob/main/Pandas/ReshapingDataUsingPandas.ipynb)
+
 
 
 ### 2. Data Cleaning
