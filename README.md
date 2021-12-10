@@ -11,7 +11,7 @@ This Github repository contains Sample Jupyter Notebook.
     - Light GBM Classifier with Bayesian Optimization
 
 2. > * [Introduction to Time Series & Modeling Binary Classfication](https://github.com/Erik1120/Profolio/blob/main/ultimate_final.ipynb)
-    - Times Series Introduction
+   > * [Times Series Introduction](https://github.com/Erik1120/Profolio/blob/main/TimeSeriesDatacamp.ipynb)
     - Logistic Regression
     - Random Forest
     - Adaboost
