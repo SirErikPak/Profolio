@@ -1,4 +1,4 @@
-# Data Science **** Wrok in Progress *****
+# Data Science **** Work in Progress *****
 ### GitHub Repository
 
 This Github repository contains Sample Jupyter Notebook.
