@@ -16,6 +16,7 @@ This Github repository contains Sample Jupyter Notebook.
     - Random Forest
     - Adaboost
 
+3. > * [World Happiness Analysis](https://github.com/Erik1120/Profolio/blob/main/Story.ipynb)
 
 - **A/B testing:**
 > * [A/B testing](https://github.com/Erik1120/Sample/blob/main/A_B_Testing_Datacamp.ipynb)
