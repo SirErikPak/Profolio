@@ -10,7 +10,7 @@ This Github repository contains Sample Jupyter Notebook.
     - Count Vectorizer & Tfidf Vectorizer
     - Light GBM Classifier with Bayesian Optimization
 
-2. > * [Introduction to Time Series & ] (https://github.com/Erik1120/Profolio/blob/main/ultimate_final.ipynb)
+2. > * [Introduction to Time Series & ](https://github.com/Erik1120/Profolio/blob/main/ultimate_final.ipynb)
     - Times Series Introduction
     - Logistic Regression
     - Random Forest
