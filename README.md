@@ -29,3 +29,5 @@ This Github repository contains Sample Jupyter Notebook.
 > * [Pandas Joining Data 2](https://github.com/Erik1120/Profolio/blob/main/Pandas/PandasJoinsForSpreadsheetUsers.ipynb)
 
 > * [Reshaping data](https://github.com/Erik1120/Profolio/blob/main/Pandas/ReshapingDataUsingPandas.ipynb)
+
+4. > * [IBM Attrition](https://github.com/Erik1120/Profolio/blob/main/HR_Attrition.ipynb)
