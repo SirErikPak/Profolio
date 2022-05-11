@@ -19,6 +19,17 @@ This Github repository contains Sample Jupyter Notebook.
 3. > * [World Happiness Analysis](https://github.com/Erik1120/Profolio/blob/main/Story.ipynb)
 
 4. > * [IBM Attrition](https://github.com/Erik1120/Profolio/blob/main/HR_Attrition.ipynb)
+    - Data Visualization
+    - Principle Component Analysis
+        - Standardized & Normalized
+    - Random under-sampling (Normalized and Standardized Dataset)
+    - Over Sampling (Synthetic Minority Oversampling Technique)
+    - Multicollinearity Analysis (variance_inflation_factor)
+    - SHAP Plots (SHapley Additive exPlanations)
+    - Logistic Regression
+    - Random Forest
+    - XG Boost Classifier
+    - Light GBM Classifier
 
 - **A/B testing:**
 > * [A/B testing](https://github.com/Erik1120/Sample/blob/main/A_B_Testing_Datacamp.ipynb)
