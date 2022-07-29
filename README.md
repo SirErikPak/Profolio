@@ -5,12 +5,12 @@ This Github repository contains Sample Jupyter Notebook.
 - **Data Source**
 > * [Kaggle](https://www.kaggle.com/kazanova/sentiment140)
 
-1. > * [Sentiment analysis with tweets](https://github.com/Erik1120/Profolio/blob/main/BayesianOptimization.ipynb)
+1. > * [Sentiment analysis with tweets](https://github.com/Erik1120/Profolio/blob/main/Notebook/BayesianOptimization.ipynb)
     - Lancaster Stemmer
     - Count Vectorizer & Tfidf Vectorizer
     - Light GBM Classifier with Bayesian Optimization
 
-2. > * [Introduction to Time Series & Modeling Binary Classfication](https://github.com/Erik1120/Profolio/blob/main/ultimate_final.ipynb)
+2. > * [Introduction to Time Series & Modeling Binary Classfication](https://github.com/Erik1120/Profolio/blob/main/Notebook/ultimate_final.ipynb)
    > * [Times Series Introduction](https://github.com/Erik1120/Profolio/blob/main/TimeSeriesDatacamp.ipynb)
     - Logistic Regression
     - Random Forest
