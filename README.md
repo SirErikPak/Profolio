@@ -32,7 +32,7 @@ This Github repository contains Sample Jupyter Notebook.
     - Light GBM Classifier
 
 - **A/B testing:**
-> * [A/B testing](https://github.com/Erik1120/Sample/blob/main/A_B_Testing_Datacamp.ipynb)
+> * [A/B testing](https://github.com/Erik1120/Sample/blob/main/Notebook/A_B_Testing_Datacamp.ipynb)
 
 - **Pandas:**
 > * [Pandas Data Manipulation](https://github.com/Erik1120/Profolio/blob/main/Pandas/DataManipulationPandas.ipynb)
