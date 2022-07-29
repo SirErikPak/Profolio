@@ -11,14 +11,14 @@ This Github repository contains Sample Jupyter Notebook.
     - Light GBM Classifier with Bayesian Optimization
 
 2. > * [Introduction to Time Series & Modeling Binary Classfication](https://github.com/Erik1120/Profolio/blob/main/Notebook/ultimate_final.ipynb)
-   > * [Times Series Introduction](https://github.com/Erik1120/Profolio/blob/main/TimeSeriesDatacamp.ipynb)
+   > * [Times Series Introduction](https://github.com/Erik1120/Profolio/blob/main/Notebook/TimeSeriesDatacamp.ipynb)
     - Logistic Regression
     - Random Forest
     - Adaboost
 
-3. > * [World Happiness Analysis](https://github.com/Erik1120/Profolio/blob/main/Story.ipynb)
+3. > * [World Happiness Analysis](https://github.com/Erik1120/Profolio/blob/main/Notebook/Story.ipynb)
 
-4. > * [IBM Attrition](https://github.com/Erik1120/Profolio/blob/main/HR_Attrition.ipynb)
+4. > * [IBM Attrition](https://github.com/Erik1120/Profolio/blob/main/Notebook/HR_Attrition.ipynb)
     - Data Visualization
     - Principle Component Analysis
         - Standardized & Normalized
