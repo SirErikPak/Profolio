@@ -10,6 +10,12 @@ This Github repository contains Sample Jupyter Notebook.
     - Count Vectorizer & Tfidf Vectorizer
     - Light GBM Classifier with Bayesian Optimization
 
+2. Sentiment Analysis Neural Network
+    - > * [Wrangling](https://github.com/Erik1120/Profolio/blob/main/Notebook/SentimentAnalysis_wrangling.ipynb)
+
+    
+    
+
 2. > * [Introduction to Time Series & Modeling Binary Classfication](https://github.com/Erik1120/Profolio/blob/main/Notebook/ultimate_final.ipynb)
    > * [Times Series Introduction](https://github.com/Erik1120/Profolio/blob/main/Notebook/TimeSeriesDatacamp.ipynb)
     - Logistic Regression
