@@ -21,7 +21,7 @@ This exercise is the tweet sentiment dataset which contains 1.6 million tweets. 
         b) All the features except target and text were remove from our analysis.
     
     B. Algorithm Performance
-    - > * [Performance Log](https://github.com/Erik1120/Profolio/blob/main/Notebook/image/log_styled.png)    
+    - > * [Performance Log](https://github.com/Erik1120/Profolio/blob/main/Notebook/image/log_styled.pdf)    
 
 
 2. > * [Introduction to Time Series & Modeling Binary Classfication](https://github.com/Erik1120/Profolio/blob/main/Notebook/ultimate_final.ipynb)
