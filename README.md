@@ -25,7 +25,7 @@ This exercise is the tweet sentiment dataset which contains 1.6 million tweets. 
     - > * [Performance Log](https://github.com/Erik1120/Profolio/blob/main/Notebook/image/log_styled.pdf)    
 
 2. **Fraud Analysis**
-    There are problems where a class imbalance in a dataset like our current fraudulent transactions dataset. For example, the vast majority will be in the "Non-Fraud" class, and a tiny minority will be in the "Fraud" class. The Paysim dataset is based on a sample of actual transactions extracted from one month of financial logs from a mobile money service implemented in an African country. This dataset contains 6,362,620 rows by 11 columns with 8,213 labeled as a "Fraud."
+- There are problems where a class imbalance in a dataset like our current fraudulent transactions dataset. For example, the vast majority will be in the "Non-Fraud" class, and a tiny minority will be in the "Fraud" class. The Paysim dataset is based on a sample of actual transactions extracted from one month of financial logs from a mobile money service implemented in an African country. This dataset contains 6,362,620 rows by 11 columns with 8,213 labeled as a "Fraud."
 
 - **Data Source**
 > * [Kaggle](https://www.kaggle.com/ealaxi/paysim1)
