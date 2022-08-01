@@ -8,16 +8,6 @@ This Github repository contains Sample Jupyter Notebook.
 **Informaion:**
 This exercise is the tweet sentiment dataset which contains 1.6 million tweets. The tweets are labeled with (0 = negative, 4 = positive). In this exercise, the data ONLY contains a positive and negative sentiment, a classic balanced binary classification exercise.
 
-**Content**
-It contains the following 6 fields:
-1. **target:** the polarity of the tweet (0 = negative, 2 = neutral, 4 = positive)
-2. **ids:** The id of the tweet 
-3. **date:** the date of the tweet
-4. **flag:** The query. If there is no query, then this value is NO_QUERY.
-5. **user:** the user that tweeted
-6. **text:** the text of the tweet
-
-
 1. > * [Sentiment analysis with tweets](https://github.com/Erik1120/Profolio/blob/main/Notebook/Sentiment_Data.ipynb)
     - Lancaster Stemmer
     - Count Vectorizer & Tfidf Vectorizer
@@ -25,13 +15,14 @@ It contains the following 6 fields:
     - Light GBM Classifier with Bayesian Optimization
     - Keras & MLP Classifier with Keras tunning
 
-    1.1 Sentiment Analysis
+    A. Sentiment Analysis
     - > * [Wrangling](https://github.com/Erik1120/Profolio/blob/main/Notebook/SentimentAnalysis_wrangling.ipynb)
         a) Applied Regular expression operations to remove noise from the tweets. Also, Lancaster Stemmer was used to determining the common root form and from nltk.corpus to generate stopwords removal for our sentiment analysis data.
         b) All the features except target and text were remove from our analysis.
     
-    1.2 Algorithm Performance
-    - > * [Wrangling](https://github.com/Erik1120/Profolio/blob/main/Notebook/image/log_styled.png)    
+    B. Algorithm Performance
+    - > * [Performance Log](https://github.com/Erik1120/Profolio/blob/main/Notebook/image/log_styled.png)    
+
 
 2. > * [Introduction to Time Series & Modeling Binary Classfication](https://github.com/Erik1120/Profolio/blob/main/Notebook/ultimate_final.ipynb)
    > * [Times Series Introduction](https://github.com/Erik1120/Profolio/blob/main/Notebook/TimeSeriesDatacamp.ipynb)
