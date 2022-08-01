@@ -2,6 +2,7 @@
 ### GitHub Repository
 
 This Github repository contains Sample Jupyter Notebook.
+
 - **Data Source**
 > * [Kaggle](https://www.kaggle.com/kazanova/sentiment140)
 
@@ -23,18 +24,16 @@ This exercise is the tweet sentiment dataset which contains 1.6 million tweets. 
     B. Algorithm Performance
     - > * [Performance Log](https://github.com/Erik1120/Profolio/blob/main/Notebook/image/log_styled.pdf)    
 
+**Informaion:**
+There are problems where a class imbalance in a dataset like our current fraudulent transactions dataset. For example, the vast majority will be in the "Non-Fraud" class, and a tiny minority will be in the "Fraud" class. The Paysim dataset is based on a sample of actual transactions extracted from one month of financial logs from a mobile money service implemented in an African country. This dataset contains 6,362,620 rows by 11 columns with 8,213 labeled as a "Fraud."
 
-2. > * [Introduction to Time Series & Modeling Binary Classfication](https://github.com/Erik1120/Profolio/blob/main/Notebook/Exercise/ultimate_final.ipynb)
-   > * [Times Series Introduction](https://github.com/Erik1120/Profolio/blob/main/Notebook/TimeSeriesDatacamp.ipynb)
-    - Logistic Regression
-    - Random Forest
-    - Adaboost
+- **Data Source**
+> * [Kaggle](https://www.kaggle.com/ealaxi/paysim1)
 
-3. > * [World Happiness Analysis](https://github.com/Erik1120/Profolio/blob/main/Notebook/Story.ipynb)
-    - Principle Component Analysis
-    - Visualization 
+2. **Fraud Analysis**
+> * [Data Cleaning Notebook](https://github.com/Erik1120/Profolio/blob/main/Notebook/Fraud/Data_WranglingEDA.ipynb)
 
-4. > * [IBM Attrition](https://github.com/Erik1120/Profolio/blob/main/Notebook/HR_Attrition.ipynb)
+3. > * [IBM Attrition](https://github.com/Erik1120/Profolio/blob/main/Notebook/HR_Attrition.ipynb)
     - Data Visualization
     - Principle Component Analysis
         - Standardized & Normalized
@@ -46,8 +45,16 @@ This exercise is the tweet sentiment dataset which contains 1.6 million tweets. 
     - Random Forest
     - XG Boost Classifier
     - Light GBM Classifier
- 
-5. > * [Fraud Analysis]()
+    
+4. > * [Introduction to Time Series & Modeling Binary Classfication](https://github.com/Erik1120/Profolio/blob/main/Notebook/Exercise/ultimate_final.ipynb)
+   > * [Times Series Introduction](https://github.com/Erik1120/Profolio/blob/main/Notebook/TimeSeriesDatacamp.ipynb)
+    - Logistic Regression
+    - Random Forest
+    - Adaboost
+
+5. > * [World Happiness Analysis](https://github.com/Erik1120/Profolio/blob/main/Notebook/Story.ipynb)
+    - Principle Component Analysis
+    - Visualization 
 
 - **A/B testing**
 > * [A/B testing](https://github.com/Erik1120/Sample/blob/main/Notebook/Exercise/A_B_Testing_Datacamp.ipynb)
