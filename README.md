@@ -51,10 +51,10 @@ This exercise is the tweet sentiment dataset which contains 1.6 million tweets. 
     - Random Forest
     - Adaboost
     
-   > * [Times Series](https://github.com/Erik1120/Profolio/blob/main/Notebook/TimeSeriesDatacamp.ipynb)
-    - ARIMA
-    - ARMA
-    - adfuller, plot_acf, plot_pacf
+    > * [Times Series](https://github.com/Erik1120/Profolio/blob/main/Notebook/TimeSeriesDatacamp.ipynb)
+        - ARIMA
+        - ARMA
+        - adfuller, plot_acf, plot_pacf
 
 5. > * [World Happiness Analysis](https://github.com/Erik1120/Profolio/blob/main/Notebook/Story.ipynb)
     - Principle Component Analysis
