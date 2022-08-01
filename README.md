@@ -49,11 +49,17 @@ This exercise is the tweet sentiment dataset which contains 1.6 million tweets. 
  
 5. > * [Fraud Analysis]()
 
-- **A/B testing:**
+- **A/B testing**
 > * [A/B testing](https://github.com/Erik1120/Sample/blob/main/Notebook/Exercise/A_B_Testing_Datacamp.ipynb)
 
-- **Bayes:**
+- **Bayes**
 > * [Bayes](https://github.com/Erik1120/Sample/blob/main/Notebook/Exercise/Bayes_exercise.ipynb)
+
+- **Case Study - London Housing**
+> * [London Housing](https://github.com/Erik1120/Sample/blob/main/Notebook/Exercise/Case_Study-London_Housing.ipynb)
+
+- **Cosine Similarity Calculations**
+> * [Cosine Similarity](https://github.com/Erik1120/Sample/blob/main/Notebook/Exercise/Cosine_Similarity_Case_Study.ipynb)
 
 - **Pandas:**
 > * [Pandas Data Manipulation](https://github.com/Erik1120/Profolio/blob/main/Pandas/DataManipulationPandas.ipynb)
