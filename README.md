@@ -17,14 +17,14 @@ This exercise is the tweet sentiment dataset which contains 1.6 million tweets. 
 
     A. Sentiment Analysis
     - > * [Wrangling](https://github.com/Erik1120/Profolio/blob/main/Notebook/SentimentAnalysis_wrangling.ipynb)
-        a) Applied Regular expression operations to remove noise from the tweets. Also, Lancaster Stemmer was used to determining the common root form and from nltk.corpus to generate stopwords removal for our sentiment analysis data.
-        b) All the features except target and text were remove from our analysis.
+    a) Applied Regular expression operations to remove noise from the tweets. Also, Lancaster Stemmer was used to determining the common root form and from nltk.corpus to generate stopwords removal for our sentiment analysis data.
+    b) All the features except target and text were remove from our analysis.
     
     B. Algorithm Performance
     - > * [Performance Log](https://github.com/Erik1120/Profolio/blob/main/Notebook/image/log_styled.pdf)    
 
 
-2. > * [Introduction to Time Series & Modeling Binary Classfication](https://github.com/Erik1120/Profolio/blob/main/Notebook/ultimate_final.ipynb)
+2. > * [Introduction to Time Series & Modeling Binary Classfication](https://github.com/Erik1120/Profolio/blob/main/Notebook/Exercise/ultimate_final.ipynb)
    > * [Times Series Introduction](https://github.com/Erik1120/Profolio/blob/main/Notebook/TimeSeriesDatacamp.ipynb)
     - Logistic Regression
     - Random Forest
@@ -46,9 +46,11 @@ This exercise is the tweet sentiment dataset which contains 1.6 million tweets. 
     - Random Forest
     - XG Boost Classifier
     - Light GBM Classifier
+ 
+5. > * [Fraud Analysis]()
 
 - **A/B testing:**
-> * [A/B testing](https://github.com/Erik1120/Sample/blob/main/Notebook/A_B_Testing_Datacamp.ipynb)
+> * [A/B testing](https://github.com/Erik1120/Sample/blob/main/Notebook/Exercise/A_B_Testing_Datacamp.ipynb)
 
 - **Pandas:**
 > * [Pandas Data Manipulation](https://github.com/Erik1120/Profolio/blob/main/Pandas/DataManipulationPandas.ipynb)
