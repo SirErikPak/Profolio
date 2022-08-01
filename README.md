@@ -52,6 +52,9 @@ This exercise is the tweet sentiment dataset which contains 1.6 million tweets. 
 - **A/B testing:**
 > * [A/B testing](https://github.com/Erik1120/Sample/blob/main/Notebook/Exercise/A_B_Testing_Datacamp.ipynb)
 
+- **Bayes:**
+> * [Bayes](https://github.com/Erik1120/Sample/blob/main/Notebook/Exercise/Bayes_exercise.ipynb)
+
 - **Pandas:**
 > * [Pandas Data Manipulation](https://github.com/Erik1120/Profolio/blob/main/Pandas/DataManipulationPandas.ipynb)
 
