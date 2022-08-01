@@ -29,8 +29,9 @@ This exercise is the tweet sentiment dataset which contains 1.6 million tweets. 
 
 - **Data Source**
 > * [Kaggle](https://www.kaggle.com/ealaxi/paysim1)
+> * [Data Cleaning](https://github.com/Erik1120/Profolio/blob/main/Notebook/Fraud/Data_WranglingEDA.ipynb)
+> * [EDA](https://github.com/Erik1120/Profolio/blob/main/Notebook/Fraud/Data_Engineering_Fraud.ipynb)
 
-> * [Data Cleaning Notebook](https://github.com/Erik1120/Profolio/blob/main/Notebook/Fraud/Data_WranglingEDA.ipynb)
 
 3. > * [IBM Attrition](https://github.com/Erik1120/Profolio/blob/main/Notebook/HR_Attrition.ipynb)
     - Data Visualization
@@ -46,10 +47,14 @@ This exercise is the tweet sentiment dataset which contains 1.6 million tweets. 
     - Light GBM Classifier
     
 4. > * [Introduction to Time Series & Modeling Binary Classfication](https://github.com/Erik1120/Profolio/blob/main/Notebook/Exercise/ultimate_final.ipynb)
-   > * [Times Series Introduction](https://github.com/Erik1120/Profolio/blob/main/Notebook/TimeSeriesDatacamp.ipynb)
     - Logistic Regression
     - Random Forest
     - Adaboost
+    
+   > * [Times Series](https://github.com/Erik1120/Profolio/blob/main/Notebook/TimeSeriesDatacamp.ipynb)
+    - ARIMA
+    - ARMA
+    - adfuller, plot_acf, plot_pacf
 
 5. > * [World Happiness Analysis](https://github.com/Erik1120/Profolio/blob/main/Notebook/Story.ipynb)
     - Principle Component Analysis
@@ -75,4 +80,6 @@ This exercise is the tweet sentiment dataset which contains 1.6 million tweets. 
 > * [Pandas Joining Data 2](https://github.com/Erik1120/Profolio/blob/main/Pandas/PandasJoinsForSpreadsheetUsers.ipynb)
 
 > * [Reshaping data](https://github.com/Erik1120/Profolio/blob/main/Pandas/ReshapingDataUsingPandas.ipynb)
+
+> * [List/Tuple/Set](https://github.com/Erik1120/Profolio/blob/main/Notebook/ist_Set_Tuple_Dict.ipynb.ipynb)
 
