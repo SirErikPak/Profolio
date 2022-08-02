@@ -72,6 +72,10 @@ This exercise is the tweet sentiment dataset which contains 1.6 million tweets. 
 - **Cosine Similarity Calculations**
 > * [Cosine Similarity](https://github.com/Erik1120/Sample/blob/main/Notebook/Exercise/Cosine_Similarity_Case_Study.ipynb)
 
+- **Factor Analysis Exercise**
+> * [Factor Analysis](https://github.com/Erik1120/Sample/blob/main/Notebook/Exercise/FactorAnalysis.ipynb)
+
+
 - **Pandas:**
 > * [Pandas Data Manipulation](https://github.com/Erik1120/Profolio/blob/main/Pandas/DataManipulationPandas.ipynb)
 
