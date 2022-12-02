@@ -56,7 +56,7 @@ This exercise is the tweet sentiment dataset which contains 1.6 million tweets. 
         - ARMA
         - adfuller, plot_acf, plot_pacf
 
-5. > * [World Happiness Analysis](https://github.com/Erik1120/Profolio/blob/main/Notebook/Story.ipynb)
+5. > * [World Happiness Analysis](https://github.com/Erik1120/Profolio/blob/main/Notebook/Happy/Story.ipynb)
     - Principle Component Analysis
     - Visualization 
 
