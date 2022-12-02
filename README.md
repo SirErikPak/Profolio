@@ -31,6 +31,7 @@ This exercise is the tweet sentiment dataset which contains 1.6 million tweets. 
 > * [Kaggle](https://www.kaggle.com/ealaxi/paysim1)
 > * [Data Cleaning](https://github.com/Erik1120/Profolio/blob/main/Notebook/Fraud/Data_WranglingEDA.ipynb)
 > * [EDA](https://github.com/Erik1120/Profolio/blob/main/Notebook/Fraud/Data_Engineering_Fraud.ipynb)
+> * [Machine Learning Performance](https://github.com/Erik1120/Profolio/blob/main/Notebook/Fraud/MachineLearning.ipynb)
 
 
 3. > * [IBM Attrition](https://github.com/Erik1120/Profolio/blob/main/Notebook/HR_Attrition.ipynb)
