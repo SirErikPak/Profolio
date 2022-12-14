@@ -33,9 +33,6 @@ This exercise is the tweet sentiment dataset which contains 1.6 million tweets. 
 > * [EDA](https://github.com/Erik1120/Profolio/blob/main/Notebook/Fraud/Data_Engineering_Fraud.ipynb)
 > * [Machine Learning Performance](https://github.com/Erik1120/Profolio/blob/main/Notebook/Fraud/MachineLearning.ipynb)
 
-
-2.5. > * [Introduction to Time Series & Modeling Binary Classfication] (https://github.com/Erik1120/Profolio/blob/main/Notebook/Attrition/HR_Attrition_Visualization_PCA.ipynb))
-
 3. > * [IBM Attrition](https://github.com/Erik1120/Profolio/blob/main/Notebook/HR_Attrition.ipynb)
     - Data Visualization
     - Principle Component Analysis
