@@ -86,9 +86,3 @@ This exercise is the tweet sentiment dataset which contains 1.6 million tweets. 
 > * [Reshaping data](https://github.com/Erik1120/Profolio/blob/main/Pandas/ReshapingDataUsingPandas.ipynb)
 
 > * [List/Tuple/Set](https://github.com/Erik1120/Profolio/blob/main/Notebook/ist_Set_Tuple_Dict.ipynb.ipynb)
-
-<<<<<<< HEAD
-=======
->>>>>>> 97a90ec (Initial commit)
->>>>>>> 92f8fad (Initial commit)
->>>>>>> 1b1f56a (Initial commit)

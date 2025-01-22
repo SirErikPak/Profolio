@@ -1,0 +1,23 @@
+# Load required libraries
+library(lmtest)
+library(car)
+
+# Create sample data
+set.seed(123)
+x <- runif(100, 0, 10)
+y <- 2 + 3*x + rnorm(100, 0, x)  # Introducing heteroscedasticity
+
+# Fit linear regression model
+model <- lm(y ~ x)
+
+# Perform Breusch-Pagan test
+bp_test <- bptest(model)
+
+# Print test results
+print(bp_test)
+
+# Plot residuals vs. fitted values
+plot(fitted(model), resid(model),
+     xlab = "Fitted values", ylab = "Residuals",
+     main = "Residuals vs Fitted")
+abline(h = 0, col = "red", lty = 2)
