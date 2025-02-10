@@ -104,14 +104,17 @@ def removeColumn(data, col, display=True):
     """
     Remove unwanted columns if they exist in the DataFrame
     """
-    # Ensure col is a list of column names (strings)
-    if isinstance(col, pd.Index):
-        col_list = col.tolist()  # Convert Index to list
-    else:
-        col_list = col if isinstance(col, list) else [col]
-    
-    # Convert columns to a set for efficient lookup
+    # Ensure col_list is a list
+    col_list = col.tolist() if isinstance(col, np.ndarray) else col
     columns_set = set(data.columns)
+    # # Ensure col is a list of column names (strings)
+    # if isinstance(col, pd.Index):
+    #     col_list = col.tolist()  # Convert Index to list
+    # else:
+    #     col_list = col if isinstance(col, list) else [col]
+    
+    # # Convert columns to a set for efficient lookup
+    # columns_set = set(data.columns)
     
     existing_cols = [c for c in col_list if c in columns_set]
     non_existing_cols = [c for c in col_list if c not in columns_set]
@@ -149,7 +152,7 @@ def maintainDataDict(data, removeColLst, txt= '', col="Information", display=Tru
     return data
 
 
-def HouseKeeping(data, removeColLst, dataDict,  dataLabel, dataCAN, dataDON, dataBoth, dataOrdinal, dataNominal, dataNumeric, dataRemove, dataObject,  txt, display=True):
+def HouseKeeping(data, removeColLst, dataDict,  dataLabel, dataCAN, dataDON, dataBoth, dataOrdinal, dataNominal, dataNumeric, dataDrop, dataObject, dataUnknown, dataDate, txt, display=True):
     """
     Run helper fuction for house keeping
     """
@@ -164,15 +167,16 @@ def HouseKeeping(data, removeColLst, dataDict,  dataLabel, dataCAN, dataDON, dat
     dataOrdinal = removeRowUsingMask(dataOrdinal, removeColLst, colstr='column',  string='df_ordinal', display=display)
     dataNominal = removeRowUsingMask(dataNominal, removeColLst, colstr='column', string='df_nominal',  display=display)
     dataNumeric = removeRowUsingMask(dataNumeric, removeColLst, colstr='column', string='df_numeric',  display=display)
-    dataRemove = removeRowUsingMask(dataRemove, removeColLst, colstr='column',  string='df_remove', display=display)
+    dataDrop = removeRowUsingMask(dataDrop, removeColLst, colstr='column',  string='df_drop', display=display)
     dataObject = removeRowUsingMask(dataObject, removeColLst, colstr='column',  string='df_object', display=display)
+    dataUnknown = removeRowUsingMask(dataUnknown, removeColLst, colstr='column',  string='df_unknown', display=display)
+    dataDate = removeRowUsingMask(dataDate, removeColLst, colstr='column',  string='df_date', display=display)
     
     # remove features
     data = removeColumn(data, removeColLst, display=display)
 
 
-    return data, dataDict, dataLabel, dataCAN, dataDON, dataBoth, dataOrdinal,  dataNominal, dataNumeric, dataRemove, dataObject
-
+    return data, dataDict, dataLabel, dataCAN, dataDON, dataBoth, dataOrdinal, dataNominal, dataNumeric, dataDrop, dataObject, dataUnknown, dataDate
 
 
 def dataDictSearch(datadic, colList, indexView=True):
@@ -436,3 +440,23 @@ def removeCatZeroCount(data):
         data[column] = data[column].cat.remove_categories([cat for cat in data[column].cat.categories if cat not in categories_to_keep])
 
     return data
+
+
+def DefinitionSearch(datadic, col, flag=False):
+    """
+    This function is designed to search for a given column name (col) in a DataFrame (datadic) 
+    based on the featureName column. It uses regular expression (regex) to perform a case-insensitive 
+    search and returns a subset of the DataFrame or a list of feature names, depending on the flag parameter.
+    """
+    # initialize variable
+    parm =  "r'(?i)" + col + "'" # regex search using ignore case sensitivity
+    parm = eval(parm)
+    # display
+    df_str = datadic.loc[:,['Feature','Description', 'DataType', 'SASAnalysisFormat', 'Comment', 'FeatureType', 'Information']][datadic.Feature.str.contains(parm) & \
+                ~datadic.Information.str.contains('DROP', case=False, na=False)]
+
+    if flag:
+        feature = datadic.Feature[datadic.Feature.str.contains(parm) & ~datadic.Information.str.contains('DROP', case=False, na=False)].tolist()
+        return feature
+    else:
+        return df_str

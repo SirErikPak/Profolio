@@ -144,3 +144,34 @@ def testIndependenceCat(data, cat1, cat2, flag=False):
 
     if flag:
         return contingencyTable
+    
+
+
+def corrCols(df, method='pearson', threshold=0.9, flag=False):
+    """
+    This function is designed to identify pairs of features that are highly correlated in a dataset. 
+    It calculates the correlation matrix of numerical columns and identifies pairs of features where 
+    the absolute correlation is greater than a given threshold (default is 0.9).
+    """
+    # initilaize variable
+    feature = list()
+    # calculate the correlation matrix
+    correlation_matrix = df.select_dtypes(exclude='object').corr(method=method)
+    
+    # get the number of features
+    num_features = correlation_matrix.shape[0]
+    
+    # iterate over the upper triangular part of the matrix
+    for i in range(num_features):
+        for j in range(i+1, num_features):
+            feature1 = correlation_matrix.index[i]
+            feature2 = correlation_matrix.columns[j]
+            correlation = correlation_matrix.iloc[i, j]
+            if abs(correlation) > threshold:
+                feature.append(feature2)
+                print(f"Correlation between {feature1} and {feature2}: {correlation:.3f}")
+
+    if flag:
+        return feature
+    else:
+        return

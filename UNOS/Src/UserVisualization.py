@@ -138,90 +138,103 @@ def histogramPlot(data, lst, bins=30, txt='', titleFont=15, labelFont=10, tickFo
 #     plt.show()
 
 
-# def categoricalFeaturesCountPlot(data, featureCat, txt='', figsize=(25, 15), tickFont=13, titleFont=12):
-#     """
-#     Create count plots for multiple categorical features.
-#     """
-#     # calculate the number of features and the grid dimensions
-#     num_features = len(featureCat)
-#     cols = 2  # set the number of columns
-#     rows = (num_features + cols - 1) // cols  # Calculate the required rows
+def categoricalFeaturesCountPlot(data, featureCat, txt='', figsize=(25, 15), tickFont=13, titleFont=12):
+    """
+    Create count plots for multiple categorical features.
+    """
+    # calculate the number of features and the grid dimensions
+    num_features = len(featureCat)
+    cols = 2  # set the number of columns
+    rows = (num_features + cols - 1) // cols  # Calculate the required rows
 
-#     # set the figure size
-#     plt.figure(figsize=figsize)
+    # set the figure size
+    plt.figure(figsize=figsize)
 
-#     # create count plots for each categorical feature
-#     for i, feature in enumerate(featureCat, start=1):
-#         plt.subplot(rows, cols, i)  # Create subplot dynamically based on rows and columns
-#         sns.countplot(data=data, y=feature, hue=feature, palette='Set2', legend=False)  # Use hue with the feature
-#         plt.title(f'\n{feature} {txt}', fontsize=titleFont)
-#         plt.xlabel("Frequency", fontsize=tickFont, fontweight='bold')
-#         plt.ylabel(feature, fontsize=tickFont, fontweight='bold')
-#         plt.xticks(fontsize=tickFont)
-#         plt.yticks(fontsize=tickFont)
+    # create count plots for each categorical feature
+    for i, feature in enumerate(featureCat, start=1):
+        plt.subplot(rows, cols, i)  # Create subplot dynamically based on rows and columns
+        sns.countplot(data=data, y=feature, hue=feature, palette='Set2', legend=False)  # Use hue with the feature
+        plt.title(f'\n{feature} {txt}', fontsize=titleFont)
+        plt.xlabel("Frequency", fontsize=tickFont, fontweight='bold')
+        plt.ylabel(feature, fontsize=tickFont, fontweight='bold')
+        plt.xticks(fontsize=tickFont)
+        plt.yticks(fontsize=tickFont)
         
-#     # adjust layout to prevent overlap
-#     plt.tight_layout()
-#     plt.show()
+    # adjust layout to prevent overlap
+    plt.tight_layout()
+    plt.show()
 
 
-# def boxplotMultiple(df, numericCol, categoricalCol, hue, width=8, height=6):
-#     """
-#     Generate a boxplot of with one mumerical value.
-#     """
-#     # figure with the desired size
-#     plt.figure(figsize=(width, height))
-#     # create the boxplot
-#     sns.boxplot(data=df, x=numericCol, y=categoricalCol, hue=hue)
+def boxplotMultiple(df, numericCol, categoricalCol, hue, width=8, height=6):
+    """
+    Generate a boxplot of with one mumerical value.
+    """
+    # figure with the desired size
+    plt.figure(figsize=(width, height))
+    # create the boxplot
+    sns.boxplot(data=df, x=numericCol, y=categoricalCol, hue=hue)
 
-#     # customize the legend
-#     plt.legend(title=f"{hue}", loc='upper right', fontsize=10, frameon=True)
+    # customize the legend
+    plt.legend(title=f"{hue}", loc='upper right', fontsize=10, frameon=True)
 
-#     # add title
-#     plt.title(f'Box Plot of {numericCol} by {categoricalCol} and {hue}\n')
+    # add title
+    plt.title(f'Box Plot of {numericCol} by {categoricalCol} and {hue}\n')
 
-#     # show the plot
-#     plt.show()
-
-# def safe_exp(x):
-#     return np.exp(np.minimum(x, 709))  # 709 is roughly log(1e308), max float64 value
+    # show the plot
+    plt.show()
 
 
-# def transformPlots(data, txt='', bins=30, figsize=(20, 5)):
-#     """
-#     Plots histograms of the original data, log-transformed data, 
-#     square root-transformed data, and exponentially-transformed data 
-#     in a single row of subplots.
-#     """
-#     # Transformations
-#     log_data = np.log(data + 1)  # Adding 1 to avoid log(0)
-#     sqrt_data = np.sqrt(data)
-#     exp_data = safe_exp(data)  # Exponential transformation
+def safe_exp(data, max_value=700):
+    """
+    Compute the exponential safely to avoid overflow.
+
+    Args:
+        data: Input numeric data (scalar, list, or numpy array).
+        max_value: Threshold to clip input values, preventing overflow.
+
+    Returns:
+        Exponential of the input, clipped to avoid overflow.
+    """
+    # Clip input values to avoid overflow beyond np.exp(700)
+    data = np.clip(data, -max_value, max_value)
+    return np.exp(data)
+
+
+def transformPlots(data, txt='', bins=30, figsize=(20, 5)):
+    """
+    Plots histograms of the original data, log-transformed data, 
+    square root-transformed data, and exponentially-transformed data 
+    in a single row of subplots.
+    """
+    # Transformations
+    log_data = np.log(data + 1)  # Adding 1 to avoid log(0)
+    sqrt_data = np.sqrt(data)
+    exp_data = safe_exp(data)  # Exponential transformation
     
-#     # Creating subplots
-#     fig, axes = plt.subplots(1, 4, figsize=figsize, sharey=True)
+    # Creating subplots
+    fig, axes = plt.subplots(1, 4, figsize=figsize, sharey=True)
     
-#     # Plotting the histograms
-#     axes[0].hist(data, bins=bins, color='blue', alpha=0.7, edgecolor='black')
-#     axes[0].set_title(f"Original Data - ({txt})")
-#     axes[0].set_xlabel(f"{txt}")
-#     axes[0].set_ylabel("Frequency")
+    # Plotting the histograms
+    axes[0].hist(data, bins=bins, color='blue', alpha=0.7, edgecolor='black')
+    axes[0].set_title(f"Original Data - ({txt})")
+    axes[0].set_xlabel(f"{txt}")
+    axes[0].set_ylabel("Frequency")
     
-#     axes[1].hist(log_data, bins=bins, color='green', alpha=0.7, edgecolor='black')
-#     axes[1].set_title(f"Log Transformed Data - ({txt})")
-#     axes[1].set_xlabel(f"Log({txt} + 1)")
+    axes[1].hist(log_data, bins=bins, color='green', alpha=0.7, edgecolor='black')
+    axes[1].set_title(f"Log Transformed Data - ({txt})")
+    axes[1].set_xlabel(f"Log({txt} + 1)")
     
-#     axes[2].hist(sqrt_data, bins=bins, color='orange', alpha=0.7, edgecolor='black')
-#     axes[2].set_title(f"Square Root Transformed Data - ({txt})")
-#     axes[2].set_xlabel(f"Sqrt({txt})")
+    axes[2].hist(sqrt_data, bins=bins, color='orange', alpha=0.7, edgecolor='black')
+    axes[2].set_title(f"Square Root Transformed Data - ({txt})")
+    axes[2].set_xlabel(f"Sqrt({txt})")
     
-#     axes[3].hist(exp_data, bins=bins, color='red', alpha=0.7, edgecolor='black')
-#     axes[3].set_title(f"Exponential Transformed Data - ({txt})")
-#     axes[3].set_xlabel(f"Exp({txt})")
+    axes[3].hist(exp_data, bins=bins, color='red', alpha=0.7, edgecolor='black')
+    axes[3].set_title(f"Exponential Transformed Data - ({txt})")
+    axes[3].set_xlabel(f"Exp({txt})")
     
-#     # Adjust layout and show the plot
-#     plt.tight_layout()
-#     plt.show()
+    # Adjust layout and show the plot
+    plt.tight_layout()
+    plt.show()
 
 
 def DensityTransformPlots(data, txt='', bins=30, figsize=(15, 5), KDE=True):
