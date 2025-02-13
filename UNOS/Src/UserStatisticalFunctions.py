@@ -175,3 +175,40 @@ def corrCols(df, method='pearson', threshold=0.9, flag=False):
         return feature
     else:
         return
+    
+
+from pyampute.exploration.mcar_statistical_tests import MCARTest
+
+def testMCAR(data):
+    """
+    Perform Little's MCAR (Missing Completely At Random) test on a dataset.
+
+    This function uses Little's MCAR test to determine if the missing data in the provided
+    dataset is missing completely at random. It prints the p-value of the test and interprets
+    the result.
+
+    Parameters:
+    data (pd.DataFrame): The dataset to test for MCAR. It should be a pandas DataFrame.
+
+    Returns:
+    None
+
+    Raises:
+    ValueError: If the input data is not a pandas DataFrame.
+    """
+    if not isinstance(data, pd.DataFrame):
+        raise ValueError("Input data must be a pandas DataFrame.")
+    
+    try:
+        # perform Little's MCAR test
+        mcar_test = MCARTest(method="little")
+        p_value = mcar_test.little_mcar_test(data)
+        print(f"Little's MCAR test p-value: {p_value:.4f}")
+        
+        # interpretation
+        if p_value > 0.05:
+            print("Fail to reject null hypothesis: Data may be Missing Completely At Random (MCAR).")
+        else:
+            print("Reject null hypothesis: Data is not Missing Completely At Random (MCAR).")
+    except Exception as e:
+        print(f"An error occurred: {e}")
