@@ -6,7 +6,7 @@ import numpy as np
 import scipy.stats as stats
 
 
-def plot_qq(data, features_list):
+def plotQQ(data, features_list):
     """
     Generate Q-Q plots for multiple features in a dataset.
 
@@ -25,7 +25,7 @@ def plot_qq(data, features_list):
 
     # Create subplots
     fig, axes = plt.subplots(nrows=n_rows, ncols=2, figsize=(16, 4 * n_rows))
-    fig.suptitle("Q-Q Plots", fontsize=fontsize)
+    fig.suptitle("Q-Q Plots", fontsize=16)
 
     # Flatten axes array for easy iteration
     axes = axes.flatten()
@@ -41,6 +41,7 @@ def plot_qq(data, features_list):
 
     plt.tight_layout(rect=[0, 0, 1, 0.96])  # Adjust layout to accommodate the main title
     plt.show()
+
 
 
 def plotMissingData(dataSeries):

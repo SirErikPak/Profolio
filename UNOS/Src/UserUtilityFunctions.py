@@ -2,6 +2,17 @@ import pandas as pd
 import numpy as np
 
 
+def getFeatureList(data, string):
+    # initialize features and sort them alphabetically
+    features = sorted(data.columns[data.columns.str.contains(string)].tolist())
+
+    # display
+    print(data[features].describe(include='all').T.to_string())
+    print("\n:::: NaN Count:")
+    print(data[features].isna().sum().sort_index().to_string())
+    return features
+
+
 def writeToFile(data, filename, path='../Data/', format='csv'):
     """
     write dataframe to disk
@@ -397,10 +408,7 @@ def categoryContingencySurvival(data, group, observed=False, fill_value=0):
     
     # Concatenate the totals row to the original DataFrame
     df_with_totals = pd.concat([data, totals])
-    
-    # Set index name
-    df_with_totals.index.name = indexName
-    
+
     return df_with_totals
 
 
